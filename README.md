@@ -1,16 +1,16 @@
-# flutter_starter_project
+# Flutter Starter Project
 
-A new Flutter project.
+This template is being designed with simplicity and this template is manily targeted to the intermediate and beginner. 
 
-## Getting Started
+As we are not going to make this very advance by using lots of advance things. If you are going to start a new project which will be using a REST API, then this could be a awesome solution for you.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Get Started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Update the baseURL `lib/src/utils/constant.dart`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Package
+
+- [Dio](https://pub.dev/packages/dio)
+- [Cached network image](https://pub.dev/packages/cached_network_image)
+- [Shared preferences](https://pub.dev/packages/shared_preferences)

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_starter_project/src/utils/routes.dart';
+import 'package:flutter_starter_project/utils/routes.dart';
 
 class MyApp extends StatelessWidget {
   final bool isLoggedIn;

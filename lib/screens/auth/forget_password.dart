@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_starter_project/src/services/auth_api.dart';
+import 'package:flutter_starter_project/services/auth_api.dart';
 
 class ForgetPassword extends StatefulWidget {
   static const routeName = '/forget-password';

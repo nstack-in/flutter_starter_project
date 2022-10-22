@@ -1,33 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_starter_project/src/services/auth_api.dart';
+import 'package:flutter_starter_project/services/auth_api.dart';
 
-class RegisterPage extends StatefulWidget {
-  static const routeName = '/register';
-
-  const RegisterPage({
+class LoginPage extends StatefulWidget {
+  static const routeName = '/login';
+  final String? email;
+  final String? password;
+  const LoginPage({
     super.key,
-    this.name,
     this.email,
     this.password,
   });
 
-  final String? name;
-  final String? email;
-  final String? password;
-
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
-  final nameController = TextEditingController();
+class _LoginPageState extends State<LoginPage> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
-    nameController.text = widget.name ?? '';
     emailController.text = widget.email ?? '';
     passwordController.text = widget.password ?? '';
   }
@@ -36,18 +30,11 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Register Screen'),
+        title: const Text('Login Screen'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(12.0),
         children: [
-          TextField(
-            controller: nameController,
-            decoration: const InputDecoration(
-              labelText: 'Name',
-            ),
-          ),
-          const SizedBox(height: 10),
           TextField(
             controller: emailController,
             decoration: const InputDecoration(
@@ -63,18 +50,17 @@ class _RegisterPageState extends State<RegisterPage> {
           ),
           const SizedBox(height: 10),
           ElevatedButton(
-            onPressed: onRegisterAction,
-            child: const Center(child: Text('Register')),
+            onPressed: onLoginAction,
+            child: const Center(child: Text('Login')),
           ),
         ],
       ),
     );
   }
 
-  Future<void> onRegisterAction() async {
-    final name = nameController.text;
+  Future<void> onLoginAction() async {
     final email = emailController.text;
     final password = passwordController.text;
-    AuthApi.register(name, email, password);
+    AuthApi.login(email, password);
   }
 }

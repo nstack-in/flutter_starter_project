@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_starter_project/src/utils/constant.dart';
+import 'package:flutter_starter_project/utils/constant.dart';
 
 class ApiHelper {
   static late Dio _dio;

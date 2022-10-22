@@ -4,8 +4,8 @@ class UserModel {
   final String email;
 
   UserModel({
-    required this.id, 
-    this.name, 
+    required this.id,
+    this.name,
     required this.email,
   });
 

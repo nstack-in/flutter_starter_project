@@ -1,4 +1,4 @@
-import 'package:flutter_starter_project/src/utils/api_helper.dart';
+import 'package:flutter_starter_project/utils/api_helper.dart';
 
 class AuthApi {
   static final _api = ApiHelper.instance;

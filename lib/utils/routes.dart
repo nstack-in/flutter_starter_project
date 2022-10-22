@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_starter_project/src/screens/auth/forget_password.dart';
-import 'package:flutter_starter_project/src/screens/auth/login.dart';
-import 'package:flutter_starter_project/src/screens/auth/register.dart';
+import 'package:flutter_starter_project/screens/auth/forget_password.dart';
+import 'package:flutter_starter_project/screens/auth/login.dart';
+import 'package:flutter_starter_project/screens/auth/register.dart';
 
 class AppRoute {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
